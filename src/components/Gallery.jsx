@@ -6,7 +6,9 @@ import { useState } from "react"
 const Gallery = () => {
     const [index , setIndex] = useState(0)
 
-
+    const onNextButtonHandler = () => {
+        setIndex(index + 1)
+    }
 
     let sculpture = sculptureList[index]
 
@@ -25,7 +27,7 @@ const Gallery = () => {
             <p className="text-md leading-8">Description</p>
             <div className="flex justify-between items-center">
                 <ShowDetailsButton/>
-                <NextButton/>
+                <NextButton onNextButtonHandler={onNextButtonHandler}/>
             </div>
         </div>
           
