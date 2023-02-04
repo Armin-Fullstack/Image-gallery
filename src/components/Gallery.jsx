@@ -20,17 +20,18 @@ const Gallery = () => {
 
     return (
 
-        <div className="flex flex-col rounded-xl bg-gray-400 p-3 max-w-lg mx-5 md:mx-0">
+        <div className="flex flex-col rounded-xl bg-gray-400 p-3 mx-3 md:mx-0 w-[80vw] sm:w-[50vw]
+        md:w-[40vw] my-10 md:my-0">
             <div>
                 <img src={sculpture.url} alt={sculpture.alt}  className="rounded-t-xl w-full" />
             </div>
 
-        <div className="bg-white p-3 pb-5 space-y-5 rounded-b-xl">
+        <div className="bg-white p-3 pb-5 space-y-8 rounded-b-xl">
             <div className="flex justify-between items-center">
-            <h1 className="text-xl font-bold">{sculpture.name}</h1>
-            <p className="text-md">({index + 1} of {sculptureList.length})</p>
+            <h1 className="text-md sm:text-2xl font-bold">{sculpture.name}</h1>
+            <p className="text-md w-[86px] font-bold text-end">({index + 1} of {sculptureList.length})</p>
             </div>
-            <p className="text-md leading-8">{showDetails && sculpture.description }</p>
+            <p className="md:text-md text-sm leading-8">{showDetails && sculpture.description }</p>
             <div className="flex justify-between items-center">
                 <ShowDetailsButton onShowDetailsHandler={onShowDetailsHandler}/>
                 <NextButton onNextButtonHandler={onNextButtonHandler}/>
