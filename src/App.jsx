@@ -1,7 +1,11 @@
+import Gallery from "./components/Gallery"
+
 
 const App = () => {
   return (
-    null
+
+    <Gallery/>
+
   )
 }
 
