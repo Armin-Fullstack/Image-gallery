@@ -1,3 +1,4 @@
+import NextButton from "./NextButton"
 
 const Gallery = () => {
     return (
@@ -15,7 +16,7 @@ const Gallery = () => {
             <p className="text-md leading-8">Description</p>
             <div className="flex justify-between items-center">
                 <button className="bg-blue-600 px-5 py-2 rounded-lg text-white hover:opacity-80 duration-300">Show Details</button>
-                <button className="bg-blue-600 px-5 py-2 rounded-lg text-white hover:opacity-80 duration-300">Next</button>
+                <NextButton/>
             </div>
         </div>
           
