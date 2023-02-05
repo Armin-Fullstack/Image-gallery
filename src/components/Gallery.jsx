@@ -47,7 +47,7 @@ const Gallery = () => {
           {showDetails && sculpture.description}
         </p>
         <div className="flex flex-col space-y-4">
-          <ShowDetailsButton onShowDetailsHandler={onShowDetailsHandler} />
+          <ShowDetailsButton onShowDetailsHandler={onShowDetailsHandler} showDetails={showDetails}/>
           <NextButton onNextButtonHandler={onNextButtonHandler} />
           <PreviousButton onPreviousButtonHandler={onPreviousButtonHandler} />
         </div>
