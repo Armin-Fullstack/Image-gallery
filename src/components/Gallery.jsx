@@ -9,7 +9,8 @@ const Gallery = () => {
   const [showDetails, setShowDetails] = useState(false);
 
   const onNextButtonHandler = () => {
-    index + 1 > sculptureList.length - 1 ? setIndex(0) : setIndex(index + 1);
+    index + 1 > sculptureList.length - 1  ? setIndex(0) : setIndex(index + 1);
+    setShowDetails(false)
   };
 
   const onShowDetailsHandler = () => {
@@ -18,6 +19,7 @@ const Gallery = () => {
 
   const onPreviousButtonHandler = () => {
     index - 1 > 0 ? setIndex(index - 1) : setIndex(0);
+    setShowDetails(false)
   };
 
   
